@@ -19,7 +19,7 @@ Built primarily with **Swift, SwiftUI and AppKit**, VYBE is designed to work wit
 - [5. VYBE Radial Launcher](#5-vybe-radial-launcher)
 - [6. Dictation Studio](#6-dictation-studio)
 - [7. AI Assistant](#7-ai-assistant)
-- [8. Screenshot AI](#8-screenshot-ai)
+- [8. ScreenOCR](#8-Screen-OCR)
 - [9. Memory Cards](#9-memory-cards)
 - [10. File Converter](#10-file-converter)
 - [11. App Visual Customisation](#11-app-visual-customisation)
