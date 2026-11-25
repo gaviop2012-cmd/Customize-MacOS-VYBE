@@ -254,13 +254,13 @@ Provider availability, model access, rate limits and costs are determined by the
 
 This is a global VYBE shortcut while the application is running.
 
-## 8. Screenshot AI
+## 8. Screen OCR
 
-Screenshot AI is designed to let users ask questions about something visible on their screen.
+Screen OCR is designed to let users ask questions about something visible on their screen.
 
 ### Workflow
 
-1. Open Screenshot AI.
+1. Open Screen OCR AI.
 2. Capture or select a screenshot.
 3. Enter a question or instruction about the image.
 4. Send the screenshot and prompt to the configured AI model.
