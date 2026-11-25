@@ -7,6 +7,16 @@ Instead of being limited to changing your wallpaper or rearranging a few icons, 
 
 Built primarily with **Swift, SwiftUI and AppKit**, VYBE is designed to work with macOS rather than imitate it through a web interface.
 
+QUICK START
+1. clone this repo
+2. open the folder
+3. open the Xcode project file
+4. if your Mac asks to trust it,accept
+5. click on VYBE as a target
+6. go to signing and capabilities
+7. use your account to sign the app
+8. run it
+
 ---
 
 ## Contents
