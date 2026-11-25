@@ -1,5 +1,6 @@
 # VYBE — A More Personal Mac Experience
 
+
 **VYBE is a native macOS desktop customisation environment designed to transform the way your Mac looks, feels and works.**
 
 Instead of being limited to changing your wallpaper or rearranging a few icons, VYBE brings together desktop personalisation, custom launchers, intelligent shortcuts, AI-assisted tools and a collection of utilities in one cohesive experience.
@@ -87,6 +88,19 @@ Where enabled, VYBE can automatically change wallpapers at a configured interval
 
 Rotation can use sequential or random selection. At least two saved videos are needed for rotation.
 
+### Keyboard shortcuts
+
+These global shortcuts control the active VYBE wallpaper playback:
+
+| Shortcut | Action |
+|---|---|
+| `Option + P` | Play or pause video wallpaper |
+| `Option + M` | Mute or unmute wallpaper audio |
+| `Option + L` | Toggle infinite looping |
+| `Option + R` | Restart the current video from the beginning |
+
+The shortcuts are registered globally while VYBE is running. They control video playback; they do not select a new wallpaper.
+
 ## 2. Desktop Widgets
 
 VYBE includes a desktop-personalisation area for useful information and quick access.
@@ -103,6 +117,10 @@ The intended widget experience includes:
 Widget preferences can be stored so the desktop configuration remains consistent.
 
 **Important:** Widget preferences and in-app previews should not be confused with independent desktop-overlay windows. Whether widgets are independently draggable on the actual desktop depends on the implementation in the particular release.
+
+### Keyboard shortcuts
+
+There is no dedicated global keyboard shortcut for opening or changing desktop widgets in this build. Use the widget selection area in the VYBE window.
 
 ## 3. VYBE Dock
 
@@ -122,6 +140,14 @@ The Dock is designed around a floating, minimal appearance, with custom icon pre
 
 **macOS distinction:** VYBE Dock is a separate launcher. It does not replace or modify Apple's protected Dock or Finder components.
 
+### Keyboard shortcuts
+
+| Shortcut | Action |
+|---|---|
+| `Option + D` | Toggle VYBE Dock visibility |
+
+The shortcut toggles VYBE's own Dock, not Apple's macOS Dock.
+
 ## 4. Control Centre
 
 The VYBE Control Centre brings important controls into one place.
@@ -138,6 +164,10 @@ Depending on the release, these controls can include:
 - Desktop customisation settings.
 
 The idea is to make VYBE's most frequently used functions accessible without navigating through the entire application.
+
+### Keyboard shortcuts
+
+There is no dedicated global shortcut assigned directly to the Control Centre in this build. You can open **VYBE Command** with `Command + Option + Space`, type **Open VYBE Control Centre**, and choose the matching result.
 
 ## 5. VYBE Radial Launcher
 
@@ -167,6 +197,14 @@ The keyboard-navigation model is:
 
 The radial launcher is intended to make frequently used actions feel immediate and accessible.
 
+### Keyboard shortcut to open the launcher
+
+| Shortcut | Action |
+|---|---|
+| `Control + Option + G` | Open or close the VYBE Radial Launcher |
+
+The arrow, Return and Escape keys listed above are used after the radial interface is open.
+
 ## 6. Dictation Studio
 
 Dictation Studio provides a speech-to-text workflow within VYBE.
@@ -186,6 +224,10 @@ This makes it useful for preparing messages, notes, search queries and longer pa
 
 Recognition quality and language support depend on the speech-recognition services available to the application and macOS.
 
+### Keyboard shortcuts
+
+There is no separate global dictation hotkey in this build. Open the Radial Launcher with `Control + Option + G` and select **Dictate**. Press `Escape` to dismiss the dictation panel; use its on-screen **Stop** and **Copy transcript** controls to finish and copy the transcript.
+
 ## 7. AI Assistant
 
 VYBE includes an AI-assisted experience that can connect to supported remote AI providers.
@@ -203,6 +245,14 @@ The provider architecture has included OpenRouter and Gemini.
 The AI functionality is intended to provide assistance without requiring a local language model to run on the Mac.
 
 Provider availability, model access, rate limits and costs are determined by the selected provider and account.
+
+### Keyboard shortcuts
+
+| Shortcut | Action |
+|---|---|
+| `Option + Space` | Open or activate the VYBE AI voice assistant |
+
+This is a global VYBE shortcut while the application is running.
 
 ## 8. Screenshot AI
 
@@ -227,6 +277,10 @@ The intended workflow is based on a user-selected screenshot, rather than contin
 
 Image understanding depends on the capabilities of the configured model.
 
+### Keyboard shortcuts
+
+There is no dedicated global Screenshot AI shortcut in this build. Open the Radial Launcher with `Control + Option + G` and select **Screenshot OCR**. The screenshot action is user-initiated; it is not continuous screen monitoring.
+
 ## 9. Memory Cards
 
 Memory Cards provide a place to keep useful information inside VYBE.
@@ -242,6 +296,10 @@ Cards can be used for things such as:
 - Short reference notes.
 
 The exact storage, editing and retrieval behaviour should be checked against the release being distributed.
+
+### Keyboard shortcuts
+
+No dedicated global shortcut for Memory Cards is registered in this build. If the **Quick Note** radial action is enabled, access it from the Radial Launcher with `Control + Option + G`; Quick Note and a full Memory Cards manager should not be assumed to be identical features.
 
 ## 10. File Converter
 
@@ -269,6 +327,10 @@ Not every format is interchangeable. For example, converting a PDF into an edita
 
 Actual supported formats depend on the conversion engines included in the release.
 
+### Keyboard shortcuts
+
+There is no dedicated global File Converter hotkey in this build. Open the Radial Launcher with `Control + Option + G` and choose **Convert File** to access the conversion action.
+
 ## 11. App Visual Customisation
 
 VYBE also explores giving commonly used applications a more consistent visual identity.
@@ -278,6 +340,10 @@ The aim is to make the Mac feel less like a collection of unrelated interfaces a
 This includes custom presentation for application shortcuts and icons where supported.
 
 VYBE does not need to modify the original applications themselves to provide its own launcher and visual presentation.
+
+### Keyboard shortcuts
+
+Use `Option + D` to toggle VYBE Dock, or `Control + Option + G` to open the Radial Launcher and launch an app from its configured actions. There is no separate global shortcut for changing app icons or visual styles.
 
 ## 12. VYBE Display
 
@@ -300,6 +366,10 @@ VYBE's integration provides access to the external project; the actual display a
 
 Third-party licensing and attribution must be retained.
 
+### Keyboard shortcuts
+
+No dedicated VYBE Display keyboard shortcut is registered in this build. Open the VYBE window and use the VYBE Display setup controls.
+
 ## 13. Keyboard Shortcuts
 
 VYBE uses keyboard shortcuts to make common actions quicker.
@@ -308,17 +378,39 @@ A documented shortcut from the project is:
 
 | Shortcut | Function |
 |---|---|
-| Option + D | Open the VYBE Dock |
+| `Option + D` | Toggle VYBE Dock |
+| `Option + M` | Mute / unmute wallpaper audio |
+| `Option + L` | Toggle wallpaper looping |
+| `Option + R` | Restart video wallpaper |
+| `Option + P` | Play / pause video wallpaper |
+| `Option + Space` | Open VYBE AI voice assistant |
+| `Command + Option + Space` | Open VYBE Command |
+| `Control + Option + G` | Open VYBE Radial Launcher |
 
-The radial launcher also supports keyboard navigation:
+### Radial Launcher navigation
 
-- Arrow keys to move between actions.
-- Return to confirm.
-- Escape to close.
+| Key | Function |
+|---|---|
+| `←` / `↑` | Select previous action |
+| `→` / `↓` | Select next action |
+| `Return` | Run selected action |
+| `Escape` | Close the radial interface |
 
-Other shortcuts depend on the configured actions in the particular release.
+### Shortcut notes
+
+- These are the shortcuts registered in the supplied source archive. They are global shortcuts while VYBE is running.
+- `Option + Space` and `Command + Option + Space` are different actions: the first opens the AI voice assistant; the second opens VYBE Command.
+- Features without a dedicated shortcut are described in their own sections above. Do not interpret the absence of a shortcut as evidence that the feature is unavailable.
 
 ---
+
+## 14. Themes and Appearance
+
+VYBE's interface uses its own visual styling and presentation. The supplied source archive does not expose a dedicated global keyboard shortcut for switching themes or appearance modes. Use the appearance controls available in the VYBE interface where present.
+
+### Keyboard shortcuts
+
+No dedicated theme-switching shortcut is registered in this build.
 
 ## Technical Architecture
 
